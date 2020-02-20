@@ -12,5 +12,5 @@ After yarn have installed all packages, run following instructions
 ```sh
 yarn start
 ```
-
+On Login view use any user and password, app will let you login
 Happy Coding :smiley:
