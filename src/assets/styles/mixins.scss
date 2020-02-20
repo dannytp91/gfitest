@@ -1,0 +1,38 @@
+@mixin generateBoxShadow($offsetx, $offsety, $blurRadius, $spreadRadius, $color) {
+    -webkit-box-shadow: $offsetx $offsety $blurRadius $spreadRadius $color;
+    -moz-box-shadow: $offsetx $offsety $blurRadius $spreadRadius $color;
+    box-shadow: $offsetx $offsety $blurRadius $spreadRadius $color;
+}
+
+@mixin generateButton(
+    $background,
+    $border-background,
+    $color-text,
+    $transitionBackground) {
+    
+    background: $background;
+    border: 1px solid $border-background;
+    color: $color-text;
+    
+
+    &:after {
+        background: $transitionBackground;
+        content: "";
+        display: block;
+        height: 100%;
+        left: 0;
+        opacity: 0;
+        padding-left: 100%;
+        padding-top: 0;
+        position: absolute;
+        top: 0;
+        transition: all .8s;
+    }
+        
+    &:active:after {
+        margin: 0;
+        opacity: 1;
+        padding: 0;
+        transition: 0s
+    }
+}

@@ -1,0 +1,19 @@
+.menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+        margin-left: $space-separation-2x;
+
+        &:first-child {
+            margin-left: 0;
+        }
+
+        a {
+            color: $color-white;
+            text-decoration: none;
+        }
+    }
+}

@@ -1,0 +1,45 @@
+.movies {
+
+    &__search-form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        height: 3rem;
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .search-form {
+        &__buttons {
+            display: flex;
+        }
+
+        &__title-input {
+            width: 100%;
+            border: none;
+            background: $movies-background;
+            color: rgba(255, 255, 255, 0.88);
+        }
+
+        &__title {
+            flex-basis: 50%;
+        }
+
+        &__submit {
+            @include generateButton(
+                $button-search-color,
+                $color-gray-86,
+                $color-white,
+                $button-search-transition
+            );
+            padding: .5rem 2rem;
+            border: none;
+        }
+
+    }
+}

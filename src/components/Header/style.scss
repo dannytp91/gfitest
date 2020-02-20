@@ -1,0 +1,15 @@
+.header {
+    background-color: $movies-background;
+    display: flex;
+    height: 4rem;
+
+    &__logo {
+        flex: 1;
+    }
+
+    &__menu {
+        display: flex;
+        align-items: center;
+        padding-right: 3rem;
+    }
+}

@@ -1,0 +1,55 @@
+.login {
+    left: 25%;
+    position: absolute;
+    right: 25%;
+    top: 25%;
+
+    &__container {
+        align-items: center;
+        background: $main-color;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        padding: 1rem 2rem;
+        width: 50%;
+        height: 50vh;
+        @include generateBoxShadow(0, 30px, 60px, 0, rgba(0,0,0,0.3));
+
+        label {
+            color: $color-white;
+        }
+    }
+
+    &__form {
+        flex: 1;
+    }
+
+    &__submit {
+        width: 10rem;
+        height: 3rem;
+
+        &--button {
+            font-size: $font-size-1-half;
+        }
+    }
+
+    img {
+        max-height: 20vh;
+    }
+
+    &__user {
+        &--error {
+            display: block;
+            margin-bottom: .5rem;
+            color: $color-red;
+        }
+    }
+
+    &__password {
+        &--error {
+            display: block;
+            margin-bottom: .5rem;
+            color: $color-red;
+        }
+    }
+}

@@ -1,0 +1,59 @@
+.movie {
+    display: flex;
+    flex-direction: column;
+
+    &__header {
+        display: flex;
+        align-items: center;
+    }
+
+    &__title {
+        font-size: 1.5rem;
+        flex: 1;
+    }
+
+    &__imdb-rating {
+        display: flex;
+        align-items: center;
+    }
+
+    &__rating-star {
+
+        &--icon {
+            color: $rating-star;
+            font-size: 3rem;
+            margin-right: .5rem;
+        }
+    }
+
+    &__rating-score {
+        display: flex;
+        flex-direction: column;
+
+        &--current-rating {
+            font-size: 1.5rem;
+        }
+
+        &--max-score {
+            font-size: .8rem;
+        }
+    }
+
+    &__current-rating {
+        flex: 1;
+    }
+
+    &__info {
+        display: flex;
+    }
+
+    &__poster {
+        margin-right: 2rem;
+        width: 50%;
+    }
+
+    &__item-label {
+        color: $label-movie;
+        font-weight: bold;
+    }
+}
