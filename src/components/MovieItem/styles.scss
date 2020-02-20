@@ -1,11 +1,12 @@
 .movie-item {
     background: $movies-background;
-    padding: .5rem;
     display: flex;
-    width: 200px;
-    min-height: 400px;
     flex-direction: column;
     margin-bottom: 1rem;
+    margin-right: 1rem;
+    min-height: 400px;
+    padding: .5rem;
+    width: 200px;
 
     &__poster {
         flex: 1;
